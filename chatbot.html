@@ -1,0 +1,15 @@
+<input type="text" id="userInput" placeholder="Ask me anything...">
+<button onclick="chat()">Send</button>
+<p id="botResponse"></p>
+
+<script>
+    function chat() {
+        const input = document.getElementById("userInput").value.toLowerCase();
+        let response = "I didn't understand that.";
+
+        if (input.includes("hello")) response = "Hi there! How can I help?";
+        if (input.includes("services")) response = "We offer amazing agricultural solutions.";
+
+        document.getElementById("botResponse").innerText = response;
+    }
+</script>

@@ -1,0 +1,13 @@
+<style>
+    body.light-theme { background: white; color: black; }
+    body.dark-theme { background: black; color: white; }
+</style>
+
+<button onclick="switchTheme()">Switch Theme</button>
+
+<script>
+    function switchTheme() {
+        document.body.classList.toggle("dark-theme");
+        document.body.classList.toggle("light-theme");
+    }
+</script>
